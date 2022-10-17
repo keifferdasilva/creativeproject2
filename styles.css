@@ -1,0 +1,23 @@
+ol{
+   list-style-position: inside;
+   border-left: 5px #D73215 dotted;
+}
+
+.word{
+    padding-bottom: 2px;
+    border-bottom: 5px #851C69 groove;
+    display: inline;
+}
+
+#wordResults{
+    background-color: #449E80;
+    color: #04053C;
+}
+
+.header{
+    background-color: #A1DA53;
+}
+
+#title{
+    margin: 0;
+}

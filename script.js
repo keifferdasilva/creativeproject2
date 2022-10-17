@@ -11,7 +11,8 @@ document.getElementById("wordSubmit").addEventListener("click", function(event) 
     .then(function(json){
         console.log(json);
         const wordObject = json[0];
-        results += "<h1>" + wordObject.word.charAt(0).toUpperCase() + wordObject.word.slice(1) + "</h1>";
+        results += "<h1 class='word'>" + wordObject.word.charAt(0).toUpperCase() + wordObject.word.slice(1) + "</h1>";
+        results += "<h2>Phonetic Pronounciation: " + wordObject.phonetic + "</h2>";
         results += "<h2>Definitions</h2>";
         for(let i = 0; i < wordObject.meanings.length; i++){
             results += "<h3>Used as a " + wordObject.meanings[i].partOfSpeech + "</h3> <ol>";
